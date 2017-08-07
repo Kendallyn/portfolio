@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    /*    padding: 0;*/
+    border: 0;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+}
+
+.nav h2 {
+    padding: 1rem;
+    color: black;
+}
+
+.nav ul li {
+    float: right;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: dodgerblue;
+}
+
+section.projects h2 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+section.projects .fullstackCap,
+section.projects .nodeApp,
+section.projects .apiApp {
+    background-color: #f6f6f6;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+section.projects .fullstackCap .projectImage,
+section.projects .nodeApp .projectImage,
+section.projects .apiApp .projectImage {
+    width: 50%;
+}
+
+section.projects .fullstackCap .projectDescription,
+section.projects .apiApp .projectDescription {
+    width: 50%;
+    float: right;
+}
+
+section.projects .nodeApp .projectDescription {
+    width: 50%;
+    float: left;
+}
