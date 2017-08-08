@@ -42,6 +42,10 @@
     -o-padding-end: 0px;
 }
 
+body {
+    font-size: 18px;
+}
+
 .nav h2 {
     padding: 1rem;
     color: black;
@@ -53,18 +57,20 @@
     padding: 1rem;
 }
 
-.nav ul li a {
+.nav a {
     text-decoration: none;
     color: black;
 }
 
-.nav ul li a:hover {
+.nav a:hover {
     color: dodgerblue;
 }
 
-section.projects h2 {
-    padding-top: 1rem;
+section.projects h2,
+section.about h2 {
+    padding: 1rem;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 section.projects .fullstackCap,
@@ -72,7 +78,7 @@ section.projects .nodeApp,
 section.projects .apiApp {
     background-color: #f6f6f6;
     width: 85%;
-    margin: 1rem auto;
+    margin: 3rem auto;
 }
 
 section.projects .fullstackCap .projectImage,
@@ -85,9 +91,82 @@ section.projects .fullstackCap .projectDescription,
 section.projects .apiApp .projectDescription {
     width: 50%;
     float: right;
+    padding-left: 1rem;
 }
 
 section.projects .nodeApp .projectDescription {
     width: 50%;
     float: left;
+}
+
+section.projects .fullstackCap h2,
+section.projects .nodeApp h2,
+section.projects .apiApp h2 {
+    font-size: 2rem;
+}
+
+.techIcons {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+section.projects .fullstackCap p,
+section.projects .nodeApp p,
+section.projects .apiApp p {
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .75rem;
+    margin: 1rem 3.5rem;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.about,
+.contact {
+    border-top: 1px solid grey;
+}
+
+.aboutText {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 1rem;
+}
+
+.contact p {
+    margin: 2rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
 }
