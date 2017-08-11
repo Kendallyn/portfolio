@@ -46,14 +46,23 @@ body {
     font-size: 18px;
     font-family: 'Arapey', serif;
 }
-header ul, header h2 {
-    background-color: #f6f6f6;
+
+.nav {
+    overflow: hidden;
+/*    background-color: #DCDCDC;*/
+/*    background-color: #e3e3e3;*/
+    background-color: black;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 .nav h2 {
     padding: 1rem;
-    color: black;
-    font-size: 2.5rem;
-    font-family: 'Sedgwick Ave', cursive;
+    font-size: 2.25rem;
+    font-family: 'Paprika', cursive;
+    font-weight: normal;
 }
 
 .nav ul li {
@@ -64,7 +73,7 @@ header ul, header h2 {
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 1.5rem;
 }
 
@@ -72,11 +81,19 @@ header ul, header h2 {
     color: #628598;
 }
 
-.nav img {
+.wrapper img {
     display: block;
     margin: auto;
     width: 90%;
 }
+
+.wrapper .headline {
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    top: 105px;
+}
+
 
 section.projects h2,
 section.about h2,
@@ -85,11 +102,20 @@ section.contact h2{
     text-align: center;
     font-size: 2.5rem;
 }
+.aboutText {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.aboutText p {
+    font-size: 1.5rem;
+}
 
 section.projects .fullstackCap,
 section.projects .nodeApp,
 section.projects .apiApp {
-    background-color: #f6f6f6;
+    background-color: black;
+    color: white;
     width: 85%;
     margin: 1rem auto;
 }
@@ -98,6 +124,13 @@ section.projects .fullstackCap .projectImage,
 section.projects .nodeApp .projectImage,
 section.projects .apiApp .projectImage {
     width: 50%;
+    opacity: 0.75;
+}
+
+section.projects .fullstackCap .projectImage:hover,
+section.projects .nodeApp .projectImage:hover,
+section.projects .apiApp .projectImage:hover {
+    opacity: 1.0;
 }
 
 section.projects .fullstackCap .projectDescription,
@@ -134,7 +167,7 @@ section.projects .apiApp p {
 button {
     font-size: 1rem;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 5px;
     padding: .75rem;
     margin: 1rem 5.5rem;
@@ -143,26 +176,18 @@ button {
 
 button a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 button:hover {
-    background-color: #628598;
+    background-color: #414141;
 }
 
-.about,
+.projects,
 .contact {
     border-top: 1px solid grey;
 }
 
-.aboutText {
-    width: 80%;
-    margin: 1rem auto;
-}
-
-.aboutText p {
-    font-size: 1.5rem;
-}
 
 .contact p {
     text-align: center;
