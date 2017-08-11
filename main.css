@@ -49,10 +49,8 @@ body {
 
 .nav {
     overflow: hidden;
-/*    background-color: #DCDCDC;*/
-/*    background-color: #e3e3e3;*/
     background-color: black;
-    color: whitesmoke;
+    color: #F5F5F5;
     position: fixed;
     top: 0;
     width: 100%;
@@ -73,7 +71,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #F5F5F5;
     font-size: 1.5rem;
 }
 
@@ -94,9 +92,8 @@ body {
     top: 105px;
 }
 
-
-section.projects h2,
 section.about h2,
+section.projects h2,
 section.contact h2{
     padding: 1rem;
     text-align: center;
@@ -105,6 +102,7 @@ section.contact h2{
 .aboutText {
     width: 80%;
     margin: 1rem auto;
+    padding-bottom: 1rem;
 }
 
 .aboutText p {
@@ -115,7 +113,7 @@ section.projects .fullstackCap,
 section.projects .nodeApp,
 section.projects .apiApp {
     background-color: black;
-    color: white;
+    color: #F5F5F5;
     width: 85%;
     margin: 1rem auto;
 }
@@ -125,6 +123,16 @@ section.projects .nodeApp .projectImage,
 section.projects .apiApp .projectImage {
     width: 50%;
     opacity: 0.75;
+}
+
+section.projects .fullstackCap .projectImage,
+section.projects .apiApp .projectImage {
+    border-right: 1px solid #F5F5F5;
+}
+
+
+section.projects .nodeApp .projectImage{
+    border-left: 1px solid #F5F5F5;
 }
 
 section.projects .fullstackCap .projectImage:hover,
@@ -148,7 +156,7 @@ section.projects .nodeApp .projectDescription {
 section.projects .fullstackCap h2,
 section.projects .nodeApp h2,
 section.projects .apiApp h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .techIcons {
@@ -167,7 +175,7 @@ section.projects .apiApp p {
 button {
     font-size: 1rem;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #F5F5F5;
     border-radius: 5px;
     padding: .75rem;
     margin: 1rem 5.5rem;
@@ -176,7 +184,7 @@ button {
 
 button a {
     text-decoration: none;
-    color: white;
+    color: #F5F5F5;
 }
 
 button:hover {
@@ -192,7 +200,7 @@ button:hover {
 .contact p {
     text-align: center;
     font-size: 2rem;
-    margin: 2rem;
+    margin: .75rem 2rem;
 }
 
 .contact ul {
@@ -215,4 +223,6 @@ button:hover {
 
 footer {
     text-align: center;
+    background-color: black;
+    color: #F5F5F5;
 }
