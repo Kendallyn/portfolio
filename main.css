@@ -76,7 +76,7 @@ body {
     font-size: 1.5rem;
 }
 
-.nav ul li a:hover, .nav #name:hover {
+.nav ul li a:hover {
     color: #628598;
 }
 
@@ -84,6 +84,7 @@ body {
     display: block;
     margin: auto;
     width: 90%;
+    height: 30rem;
 }
 
 .wrapper .headline {
@@ -179,7 +180,7 @@ button {
     border: 1px solid #F5F5F5;
     border-radius: 5px;
     padding: .75rem;
-    margin: 1rem 5.5rem;
+    margin: 1rem 0rem;
     text-align: center;
 }
 
@@ -213,7 +214,6 @@ button:hover {
     margin: 2rem;
     font-size: 2rem;
     padding: auto 1rem;
-
 }
 
 .contact ul li a {
@@ -226,4 +226,10 @@ footer {
     text-align: center;
     background-color: black;
     color: #F5F5F5;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
 }
