@@ -118,6 +118,8 @@ section.projects .apiApp {
     color: #F5F5F5;
     width: 85%;
     margin: 1rem auto;
+    display: block;
+    height: auto;
 }
 
 section.projects .fullstackCap .projectImage,
@@ -162,7 +164,7 @@ section.projects .apiApp h2 {
 }
 
 .techIcons {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin: 1rem;
 }
@@ -174,14 +176,17 @@ section.projects .apiApp p {
     font-size: 1.25rem;
 }
 
+
 button {
     font-size: 1rem;
     background-color: transparent;
     border: 1px solid #F5F5F5;
     border-radius: 5px;
     padding: .75rem;
-    margin: 1rem 0rem;
+    margin: 1rem 1rem;
     text-align: center;
+    position: relative;
+    left: 9rem;
 }
 
 button a {
@@ -213,7 +218,7 @@ button:hover {
     display: inline-block;
     margin: 2rem;
     font-size: 2rem;
-    padding: auto 1rem;
+    padding: 0rem 1rem;
 }
 
 .contact ul li a {
@@ -229,7 +234,27 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    section.projects, section.contact {
+    header {
+        display: inline-block;
+    }
+
+    section.projects .fullstackCap .projectDescription,
+    section.projects .apiApp .projectDescription,
+    section.projects .nodeApp .projectDescription
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    section.projects .fullstackCap .projectImage,
+    section.projects .apiApp .projectImage,
+    section.projects .nodeApp .projectImage {
+        display: block;
+        width: 100%;
+    }
+
+    .contact ul {
         display: block;
     }
 }
