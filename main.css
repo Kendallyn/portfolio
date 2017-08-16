@@ -47,21 +47,23 @@ body {
     font-family: 'Arapey', serif;
 }
 
+
+/*
 .nav {
     overflow: hidden;
-    background-color: black;
-    color: #F5F5F5;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
 }
+*/
 
 .nav h2 {
     padding: 1rem;
     font-size: 2.25rem;
     font-family: 'Paprika', cursive;
     font-weight: normal;
+    margin-left: 1rem;
 }
 
 .nav ul li {
@@ -72,7 +74,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -96,11 +98,16 @@ body {
 
 section.about h2,
 section.projects h2,
-section.contact h2{
+section.contact h2 {
     padding: 1rem;
     text-align: center;
     font-size: 2.5rem;
 }
+
+.about {
+    padding-bottom: 1rem;
+}
+
 .aboutText {
     width: 80%;
     margin: 1rem auto;
@@ -114,47 +121,58 @@ section.contact h2{
 section.projects .fullstackCap,
 section.projects .nodeApp,
 section.projects .apiApp {
-    background-color: black;
-    color: #F5F5F5;
+    color: black;
     width: 85%;
     margin: 1rem auto;
     display: block;
-    height: auto;
+    background-color: #fafafa;
 }
 
 section.projects .fullstackCap .projectImage,
 section.projects .nodeApp .projectImage,
 section.projects .apiApp .projectImage {
-    width: 50%;
-    opacity: 0.75;
+    width: 49%;
+/*    opacity: 0.75;*/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: inline-block;
 }
 
-section.projects .fullstackCap .projectImage,
-section.projects .apiApp .projectImage {
-    border-right: 1px solid #F5F5F5;
-}
-
-
-section.projects .nodeApp .projectImage{
-    border-left: 1px solid #F5F5F5;
-}
-
+/*
 section.projects .fullstackCap .projectImage:hover,
 section.projects .nodeApp .projectImage:hover,
 section.projects .apiApp .projectImage:hover {
     opacity: 1.0;
 }
+*/
+
+section.projects .fullstackCap .projectImage {
+    background-image: url("../img/placeholder.jpg");
+}
+
+section.projects .nodeApp .projectImage {
+    background-image: url("../img/placeholder.jpg");
+}
+
+section.projects .apiApp .projectImage {
+    background-image: url("../img/placeholder.jpg");
+}
 
 section.projects .fullstackCap .projectDescription,
 section.projects .apiApp .projectDescription {
-    width: 50%;
-    float: right;
+    width: 49%;
     padding-left: 1rem;
+    display: inline-block;
+    vertical-align: top;
 }
 
 section.projects .nodeApp .projectDescription {
-    width: 50%;
-    float: left;
+    width: 49%;
+    padding-right: 1rem;
+    display: inline-block;
+    vertical-align: top;
 }
 
 section.projects .fullstackCap h2,
@@ -176,33 +194,36 @@ section.projects .apiApp p {
     font-size: 1.25rem;
 }
 
-
 button {
     font-size: 1rem;
     background-color: transparent;
-    border: 1px solid #F5F5F5;
+    border: 1px solid black;
     border-radius: 5px;
     padding: .75rem;
     margin: 1rem 1rem;
     text-align: center;
-    position: relative;
-    left: 9rem;
 }
 
 button a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: black;
 }
 
 button:hover {
     background-color: #414141;
 }
 
+button a:hover {
+    color: white;
+}
+
+
+/*
 .projects,
 .contact {
     border-top: 1px solid grey;
 }
-
+*/
 
 .contact p {
     text-align: center;
@@ -229,32 +250,5 @@ button:hover {
 
 footer {
     text-align: center;
-    background-color: black;
-    color: #F5F5F5;
-}
-
-@media only screen and (max-width: 800px) {
-    header {
-        display: inline-block;
-    }
-
-    section.projects .fullstackCap .projectDescription,
-    section.projects .apiApp .projectDescription,
-    section.projects .nodeApp .projectDescription
-    {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    section.projects .fullstackCap .projectImage,
-    section.projects .apiApp .projectImage,
-    section.projects .nodeApp .projectImage {
-        display: block;
-        width: 100%;
-    }
-
-    .contact ul {
-        display: block;
-    }
+    color: black;
 }
