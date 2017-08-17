@@ -64,22 +64,19 @@ body {
     font-family: 'Paprika', cursive;
     font-weight: normal;
     margin-left: 1rem;
+    background-color: #fafafa;
 }
 
 .nav ul li {
     float: right;
     list-style-type: none;
-    margin: 1.5rem;
+    margin: 1.7rem 1rem;
 }
 
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
-}
-
-.nav ul li a:hover {
-    color: #628598;
+    font-size: 1.25rem;
 }
 
 .wrapper img {
@@ -101,7 +98,7 @@ section.projects h2,
 section.contact h2 {
     padding: 1rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .about {
@@ -118,6 +115,10 @@ section.contact h2 {
     font-size: 1.5rem;
 }
 
+section.projects {
+    background-color: #fafafa;
+}
+
 section.projects .fullstackCap,
 section.projects .nodeApp,
 section.projects .apiApp {
@@ -132,13 +133,14 @@ section.projects .fullstackCap .projectImage,
 section.projects .nodeApp .projectImage,
 section.projects .apiApp .projectImage {
     width: 49%;
-/*    opacity: 0.75;*/
+    /*    opacity: 0.75;*/
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
     display: inline-block;
 }
+
 
 /*
 section.projects .fullstackCap .projectImage:hover,
@@ -175,16 +177,31 @@ section.projects .nodeApp .projectDescription {
     vertical-align: top;
 }
 
-section.projects .fullstackCap h2,
-section.projects .nodeApp h2,
-section.projects .apiApp h2 {
+section.projects .fullstackCap .projectDescription h2,
+section.projects .nodeApp .projectDescription h2,
+section.projects .apiApp .projectDescription h2 {
     font-size: 2.25rem;
 }
 
-.techIcons {
+section.projects .fullstackCap .projectDescription .techIcons i,
+section.projects .nodeApp .projectDescription .techIcons i,
+section.projects .apiApp .projectDescription .techIcons i {
     font-size: 3rem;
-    text-align: center;
-    margin: 1rem;
+    margin: .5rem;
+}
+
+section.projects .fullstackCap .projectDescription i,
+section.projects .nodeApp .projectDescription i,
+section.projects .apiApp .projectDescription i {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+section.projects .fullstackCap .projectDescription h3,
+section.projects .nodeApp .projectDescription h3,
+section.projects .apiApp .projectDescription h3 {
+    margin: 1rem .5rem;
+    display: inline-block;
 }
 
 section.projects .fullstackCap p,
@@ -202,6 +219,8 @@ button {
     padding: .75rem;
     margin: 1rem 1rem;
     text-align: center;
+    display: block;
+    width: 30%;
 }
 
 button a {
@@ -217,14 +236,6 @@ button a:hover {
     color: white;
 }
 
-
-/*
-.projects,
-.contact {
-    border-top: 1px solid grey;
-}
-*/
-
 .contact p {
     text-align: center;
     font-size: 2rem;
@@ -238,7 +249,7 @@ button a:hover {
 .contact ul li {
     display: inline-block;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 0rem 1rem;
 }
 
