@@ -82,15 +82,16 @@ li {
 .wrapper img {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: 30rem;
 }
 
 .wrapper .headline {
     font-size: 2.5rem;
-    text-align: center;
-    position: relative;
-    top: 105px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    color: royalblue;
 }
 
 section.about h1,
@@ -130,7 +131,6 @@ section.projects .apiApp {
     width: 88%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     background-color: #fafafa;
 }
 
@@ -156,15 +156,15 @@ section.projects .apiApp .projectImage:hover {
 */
 
 section.projects .fullstackCap .projectImage {
-    background-image: url("../img/placeholder.jpg");
+    background-image: url("img/NationalParkExplorer.png");
 }
 
 section.projects .nodeApp .projectImage {
-    background-image: url("../img/placeholder.jpg");
+    background-image: url(img/TrailFinder.png);
 }
 
 section.projects .apiApp .projectImage {
-    background-image: url("../img/placeholder.jpg");
+    background-image: url("img/WhichMovieIsNext.png");
 }
 
 section.projects .fullstackCap .projectDescription,
@@ -187,6 +187,7 @@ section.projects .nodeApp .projectDescription h2,
 section.projects .apiApp .projectDescription h2 {
     font-size: 2.25rem;
     margin-bottom: .5rem;
+    text-align: center;
 }
 
 section.projects .fullstackCap .projectDescription .fa-desktop,
