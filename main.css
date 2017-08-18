@@ -176,7 +176,7 @@ section.projects .apiApp .projectDescription {
 }
 
 section.projects .nodeApp .projectDescription {
-    width: 49%;
+    width: 50%;
     padding-right: 1rem;
     display: inline-block;
     vertical-align: top;
@@ -234,6 +234,10 @@ section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p i {
     padding-right: .5rem;
 }
 
+section.projects .fullstackCap .projectDescription .projectText {
+    font-size: 1.5rem;
+}
+
 button {
     font-size: 1rem;
     background-color: transparent;
@@ -241,7 +245,8 @@ button {
     border-radius: 5px;
     padding: .5rem;
     margin: 1rem 1rem;
-    display: inline-block;
+    position: relative;
+    left: -1rem;
 }
 
 button a {
