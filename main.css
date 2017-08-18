@@ -186,6 +186,13 @@ section.projects .fullstackCap .projectDescription h2,
 section.projects .nodeApp .projectDescription h2,
 section.projects .apiApp .projectDescription h2 {
     font-size: 2.25rem;
+    margin-bottom: .5rem;
+}
+
+section.projects .fullstackCap .projectDescription .fa-desktop,
+section.projects .nodeApp .projectDescription .fa-desktop,
+section.projects .apiApp .projectDescription .fa-desktop {
+    font-size: 1.6rem;
 }
 
 section.projects .fullstackCap .projectDescription h3,
@@ -252,6 +259,10 @@ button {
 button a {
     text-decoration: none;
     color: black;
+}
+
+button a i {
+    margin-right: .35rem;
 }
 
 button:hover {
