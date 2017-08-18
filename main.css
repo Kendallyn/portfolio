@@ -47,8 +47,10 @@ body {
     font-family: 'Arapey', serif;
 }
 
+li {
+    list-style: none;
+}
 
-/*
 .nav {
     overflow: hidden;
     position: fixed;
@@ -56,14 +58,12 @@ body {
     width: 100%;
     z-index: 9999;
 }
-*/
 
 .nav h2 {
     padding: 1rem;
     font-size: 2.25rem;
     font-family: 'Paprika', cursive;
     font-weight: normal;
-    margin-left: 1rem;
     background-color: #fafafa;
 }
 
@@ -93,11 +93,16 @@ body {
     top: 105px;
 }
 
-section.about h2,
-section.projects h2,
-section.contact h2 {
+section.about h1,
+section.projects h1,
+section.contact h1 {
     padding: 1rem;
-    text-align: center;
+    font-size: 2.25rem;
+}
+
+section.about h3,
+section.project h3,
+section.contact h3 {
     font-size: 2.25rem;
 }
 
@@ -106,9 +111,8 @@ section.contact h2 {
 }
 
 .aboutText {
-    width: 80%;
+    width: 85%;
     margin: 1rem auto;
-    padding-bottom: 1rem;
 }
 
 .aboutText p {
@@ -123,8 +127,9 @@ section.projects .fullstackCap,
 section.projects .nodeApp,
 section.projects .apiApp {
     color: black;
-    width: 85%;
-    margin: 1rem auto;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     background-color: #fafafa;
 }
@@ -137,7 +142,7 @@ section.projects .apiApp .projectImage {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 400px;
     display: inline-block;
 }
 
@@ -164,7 +169,7 @@ section.projects .apiApp .projectImage {
 
 section.projects .fullstackCap .projectDescription,
 section.projects .apiApp .projectDescription {
-    width: 49%;
+    width: 50%;
     padding-left: 1rem;
     display: inline-block;
     vertical-align: top;
@@ -183,32 +188,50 @@ section.projects .apiApp .projectDescription h2 {
     font-size: 2.25rem;
 }
 
-section.projects .fullstackCap .projectDescription .techIcons i,
-section.projects .nodeApp .projectDescription .techIcons i,
-section.projects .apiApp .projectDescription .techIcons i {
-    font-size: 3rem;
-    margin: .5rem;
-}
-
-section.projects .fullstackCap .projectDescription i,
-section.projects .nodeApp .projectDescription i,
-section.projects .apiApp .projectDescription i {
-    margin-left: 1rem;
-    font-size: 2rem;
-}
-
 section.projects .fullstackCap .projectDescription h3,
 section.projects .nodeApp .projectDescription h3,
 section.projects .apiApp .projectDescription h3 {
-    margin: 1rem .5rem;
-    display: inline-block;
+    font-size: 2rem;
+    display: inline;
 }
 
-section.projects .fullstackCap p,
-section.projects .nodeApp p,
-section.projects .apiApp p {
-    margin: 1rem;
-    font-size: 1.25rem;
+section.projects .fullstackCap .projectDescription .techIcons,
+section.projects .nodeApp .projectDescription .techIcons,
+section.projects .apiApp .projectDescription .techIcons {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.projects .fullstackCap .projectDescription .techIcons .topRowIcons p,
+section.projects .nodeApp .projectDescription .techIcons .topRowIcons p,
+section.projects .apiApp .projectDescription .techIcons .topRowIcons p {
+    width: 24%;
+    display: inline-block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+section.projects .fullstackCap .projectDescription .techIcons .bottomRowIcons p,
+section.projects .nodeApp .projectDescription .techIcons .bottomRowIcons p,
+section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p {
+    width: 24%;
+    display: inline-block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+section.projects .fullstackCap .projectDescription .techIcons .topRowIcons p i,
+section.projects .nodeApp .projectDescription .techIcons .topRowIcons p i,
+section.projects .apiApp .projectDescription .techIcons .topRowIcons p i {
+    font-size: 3rem;
+    padding-right: .5rem;
+}
+
+section.projects .fullstackCap .projectDescription .techIcons .bottomRowIcons p i,
+section.projects .nodeApp .projectDescription .techIcons .bottomRowIcons p i,
+section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p i {
+    font-size: 3rem;
+    padding-right: .5rem;
 }
 
 button {
@@ -216,11 +239,9 @@ button {
     background-color: transparent;
     border: 1px solid black;
     border-radius: 5px;
-    padding: .75rem;
+    padding: .5rem;
     margin: 1rem 1rem;
-    text-align: center;
-    display: block;
-    width: 30%;
+    display: inline-block;
 }
 
 button a {
@@ -236,14 +257,30 @@ button a:hover {
     color: white;
 }
 
-.contact p {
-    text-align: center;
+.contact {
+    text-align: left;
+}
+
+.contact i {
+    display: inline-block;
     font-size: 2rem;
-    margin: .75rem 2rem;
+}
+
+.contact h2 {
+    padding: 1rem;
+    font-size: 2.25rem;
+    display: inline-block;
+}
+
+.contact p {
+    width: 85%;
+    font-size: 1.75rem;
+    margin: .75rem 8rem;
 }
 
 .contact ul {
-    text-align: center;
+    text-align: left;
+    margin-left: 5rem;
 }
 
 .contact ul li {
