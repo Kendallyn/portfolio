@@ -241,7 +241,9 @@ section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p i {
     padding-right: .5rem;
 }
 
-section.projects .fullstackCap .projectDescription .projectText {
+section.projects .fullstackCap .projectDescription .projectText,
+section.projects .nodeApp .projectDescription .projectText,
+section.projects .apiApp .projectDescription .projectText {
     font-size: 1.5rem;
 }
 
