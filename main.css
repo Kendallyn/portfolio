@@ -1,8 +1,7 @@
 * {
     margin: 0;
-    /*    padding: 0;*/
+    padding: 0;
     border: 0;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
@@ -95,7 +94,8 @@ li {
     position: absolute;
     top: 150px;
     right: 50px;
-    color: royalblue;
+    color: aqua;
+    text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
 section.about h1,
@@ -151,22 +151,19 @@ section.projects .fullstackCap .projectImage,
 section.projects .nodeApp .projectImage,
 section.projects .apiApp .projectImage {
     width: 49%;
-    /*    opacity: 0.75;*/
-    background-position: center center;
+    opacity: 0.85;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     display: inline-block;
 }
 
-
-/*
 section.projects .fullstackCap .projectImage:hover,
 section.projects .nodeApp .projectImage:hover,
 section.projects .apiApp .projectImage:hover {
     opacity: 1.0;
 }
-*/
 
 section.projects .fullstackCap .projectImage {
     background-image: url("img/NationalParkExplorer.png");
@@ -223,42 +220,35 @@ section.projects .apiApp .projectDescription .techIcons {
     margin-bottom: 1rem;
 }
 
-section.projects .fullstackCap .projectDescription .techIcons .topRowIcons p,
-section.projects .nodeApp .projectDescription .techIcons .topRowIcons p,
-section.projects .apiApp .projectDescription .techIcons .topRowIcons p {
-    width: 24%;
+section.projects .fullstackCap .projectDescription .techIcons .iconCell,
+section.projects .nodeApp .projectDescription .techIcons .iconCell,
+section.projects .apiApp .projectDescription .techIcons .iconCell {
     display: inline-block;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    min-width: 15%;
+    text-align: center;
+    margin-top: 7px;
 }
 
-section.projects .fullstackCap .projectDescription .techIcons .bottomRowIcons p,
-section.projects .nodeApp .projectDescription .techIcons .bottomRowIcons p,
-section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p {
-    width: 24%;
-    display: inline-block;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+section.projects .fullstackCap .projectDescription .techIcons .iconCell i,
+section.projects .nodeApp .projectDescription .techIcons .iconCell i,
+section.projects .apiApp .projectDescription .techIcons .iconCell i {
+    font-size: 50px;
 }
 
-section.projects .fullstackCap .projectDescription .techIcons .topRowIcons p i,
-section.projects .nodeApp .projectDescription .techIcons .topRowIcons p i,
-section.projects .apiApp .projectDescription .techIcons .topRowIcons p i {
-    font-size: 3rem;
-    padding-right: .5rem;
-}
-
-section.projects .fullstackCap .projectDescription .techIcons .bottomRowIcons p i,
-section.projects .nodeApp .projectDescription .techIcons .bottomRowIcons p i,
-section.projects .apiApp .projectDescription .techIcons .bottomRowIcons p i {
-    font-size: 3rem;
-    padding-right: .5rem;
+section.projects .fullstackCap .projectDescription .techIcons .iconCell p,
+section.projects .nodeApp .projectDescription .techIcons .iconCell p,
+section.projects .apiApp .projectDescription .techIcons .iconCell p {
+    margin-top: 10px;
 }
 
 section.projects .fullstackCap .projectDescription .projectText,
 section.projects .nodeApp .projectDescription .projectText,
 section.projects .apiApp .projectDescription .projectText {
     font-size: 1.5rem;
+}
+
+.buttonContainer {
+    text-align: center;
 }
 
 button {
@@ -268,8 +258,6 @@ button {
     border-radius: 5px;
     padding: .5rem;
     margin: 1rem 1rem;
-    position: relative;
-    left: 9rem;
 }
 
 button a {
@@ -327,4 +315,43 @@ button:hover {
 footer {
     text-align: center;
     color: black;
+}
+
+
+/*ipad landscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+    body {
+        color: blue;
+    }
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        color: red;
+    }
+    section.projects {
+        display: block;
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        color: green;
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+    body {
+        color: purple;
+    }
 }
