@@ -12,33 +12,6 @@
     -webkit-padding-after: 0px;
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
-    /*reset Firefox user agent styles*/
-    -moz-margin-before: 0px;
-    -moz-margin-after: 0px;
-    -moz-margin-start: 0px;
-    -moz-margin-end: 0px;
-    -moz-padding-before: 0px;
-    -moz-padding-after: 0px;
-    -moz-padding-start: 0px;
-    -moz-padding-end: 0px;
-    /*reset Internet Explorer user agent styles*/
-    -ms-margin-before: 0px;
-    -ms-margin-after: 0px;
-    -ms-margin-start: 0px;
-    -ms-margin-end: 0px;
-    -ms-padding-before: 0px;
-    -ms-padding-after: 0px;
-    -ms-padding-start: 0px;
-    -ms-padding-end: 0px;
-    /*reset Opera user agent styles*/
-    -o-margin-before: 0px;
-    -o-margin-after: 0px;
-    -o-margin-start: 0px;
-    -o-margin-end: 0px;
-    -o-padding-before: 0px;
-    -o-padding-after: 0px;
-    -o-padding-start: 0px;
-    -o-padding-end: 0px;
 }
 
 body {
@@ -56,6 +29,7 @@ li {
     top: 0;
     width: 100%;
     z-index: 9999;
+    border-bottom: 3px solid #aaa;
 }
 
 .nav h2 {
@@ -98,7 +72,16 @@ li {
     text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
+section.about,
+section.skills,
+section.projects,
+section.contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 section.about h1,
+section.skills h1,
 section.projects h1,
 section.contact h1 {
     padding: 1rem;
@@ -111,22 +94,29 @@ section.contact h3 {
     font-size: 2.25rem;
 }
 
-.about {
-    padding-bottom: 1rem;
+section.about {
+    background-color: #fafafa;
 }
 
-.about h1 i {
+section.about h1 i {
     margin-right: .5rem;
 }
 
-.aboutText {
+section.about .aboutText {
     width: 85%;
     margin: 1rem auto;
 }
 
-.aboutText p {
+section.about .aboutText p {
     font-size: 1.5rem;
 }
+
+
+/*
+section.skills {
+    padding-bottom: 1rem;
+}
+*/
 
 section.projects {
     background-color: #fafafa;
@@ -178,6 +168,7 @@ section.projects .apiApp .projectImage {
 }
 
 section.projects .fullstackCap .projectDescription,
+section.projects .nodeApp .projectDescription,
 section.projects .apiApp .projectDescription {
     width: 50%;
     padding-left: 1rem;
@@ -185,12 +176,15 @@ section.projects .apiApp .projectDescription {
     vertical-align: top;
 }
 
+
+/*
 section.projects .nodeApp .projectDescription {
     width: 50%;
     padding-right: 1rem;
     display: inline-block;
     vertical-align: top;
 }
+*/
 
 section.projects .fullstackCap .projectDescription h2,
 section.projects .nodeApp .projectDescription h2,
@@ -213,20 +207,32 @@ section.projects .apiApp .projectDescription h3 {
     display: inline;
 }
 
+
+/*projects icons styles*/
+
 section.projects .fullstackCap .projectDescription .techIcons,
 section.projects .nodeApp .projectDescription .techIcons,
 section.projects .apiApp .projectDescription .techIcons {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell,
 section.projects .nodeApp .projectDescription .techIcons .iconCell,
 section.projects .apiApp .projectDescription .techIcons .iconCell {
     display: inline-block;
-    min-width: 15%;
+    min-width: 10%;
     text-align: center;
     margin-top: 7px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: auto;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
 }
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell i,
@@ -241,6 +247,42 @@ section.projects .apiApp .projectDescription .techIcons .iconCell p {
     margin-top: 10px;
 }
 
+
+/*skills icons styles*/
+
+section.skills .techIcons {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section.skills .iconCell {
+    display: inline-block;
+    min-width: 10%;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: auto;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+}
+
+section.skills .iconCell i {
+    font-size: 100px;
+}
+
+section.skills p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+/*projects rest of the styles*/
+
 section.projects .fullstackCap .projectDescription .projectText,
 section.projects .nodeApp .projectDescription .projectText,
 section.projects .apiApp .projectDescription .projectText {
@@ -253,7 +295,7 @@ section.projects .apiApp .projectDescription .projectText {
 
 button {
     font-size: 1rem;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     padding: .5rem;
@@ -270,7 +312,12 @@ button a i {
 }
 
 button:hover {
-    background-color: lightgray;
+    background-color: #666;
+    color: white;
+}
+
+button:hover a {
+    color: white;
 }
 
 .contact {
@@ -324,6 +371,9 @@ footer {
     body {
         color: blue;
     }
+    section.about {
+        text-align: center;
+    }
     section.projects {
         text-align: center;
     }
@@ -353,6 +403,13 @@ footer {
     body {
         color: red;
     }
+    .nav h2 {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+    .nav ul li {
+        margin: 1.9rem 0.3rem;
+    }
     section.projects .fullstackCap .projectImage {
         width: 80%;
         display: inline-block;
@@ -371,6 +428,17 @@ footer {
 @media only screen and (max-width: 480px) {
     body {
         color: green;
+    }
+    .nav h2 {
+        font-size: 1rem;
+        padding: 1.9rem;
+        padding-left: 0.7rem;
+    }
+    .nav ul li {
+        margin: 1.9rem 0.4rem;
+    }
+    .nav a {
+        font-size: 1rem;
     }
 }
 
