@@ -247,7 +247,7 @@ section.projects .apiApp .projectDescription .projectText {
     font-size: 1.5rem;
 }
 
-.buttonContainer {
+.buttonsContainer {
     text-align: center;
 }
 
@@ -324,6 +324,26 @@ footer {
     body {
         color: blue;
     }
+    section.projects {
+        text-align: center;
+    }
+    section.projects .fullstackCap .projectDescription,
+    section.projects .apiApp .projectDescription,
+    section.projects .nodeApp .projectDescription {
+        width: 80%;
+        vertical-align: top;
+    }
+    section.projects .fullstackCap .projectImage,
+    section.projects .nodeApp .projectImage,
+    section.projects .apiApp .projectImage {
+        width: 80%;
+        opacity: 0.85;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: inline-block;
+    }
 }
 
 
@@ -333,8 +353,15 @@ footer {
     body {
         color: red;
     }
-    section.projects {
-        display: block;
+    section.projects .fullstackCap .projectImage {
+        width: 80%;
+        display: inline-block;
+    }
+    section.projects .fullstackCap .projectDescription,
+    section.projects .apiApp .projectDescription {
+        width: 80%;
+        padding-left: 1rem;
+        vertical-align: top;
     }
 }
 
