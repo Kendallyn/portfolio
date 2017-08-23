@@ -74,26 +74,29 @@ li {
 
 section.about,
 section.skills,
-section.projects,
-section.contact {
+section.projects {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     max-width: 1500px;
     margin: 0 auto;
 }
 
 section.about h1,
 section.skills h1,
-section.projects h1,
-section.contact h1 {
+section.projects h1 {
     padding: 1rem;
     font-size: 2.25rem;
 }
 
 section.about h3,
-section.project h3,
-section.contact h3 {
+section.project h3 {
     font-size: 2.25rem;
+}
+
+section.about h1 i,
+section.projects h1 i,
+section.skills h1 i {
+    margin-right: .5rem;
 }
 
 section.about {
@@ -115,12 +118,6 @@ section.about .aboutText p {
 
 section.projects {
     background-color: #fafafa;
-}
-
-.about h1 i,
-.projects h1 i,
-.contact h1 i {
-    margin-right: .5rem;
 }
 
 section.projects .fullstackCap,
@@ -306,52 +303,32 @@ button:hover a {
     color: white;
 }
 
-.contact {
-    text-align: left;
+footer {
+    text-align: center;
+    color: black;
+    margin-top: 3rem;
 }
 
-.contact i {
-    display: inline-block;
-    font-size: 2rem;
+footer ul {
+    text-align: center;
 }
 
-.contact h2 {
-    padding: 1rem;
-    font-size: 2.25rem;
-    display: inline-block;
-}
-
-.contact p {
-    width: 85%;
-    font-size: 1.75rem;
-    margin: .75rem 5rem;
-}
-
-.contact ul {
-    text-align: left;
-    margin-left: 2rem;
-}
-
-.contact ul li {
+footer ul li {
     display: inline-block;
     margin: 2rem;
     font-size: 1.75rem;
     padding: 0rem 1rem;
 }
 
-.contact ul li a {
+footer ul li a {
     text-decoration: none;
     list-style-type: none;
     color: black;
 }
 
-footer {
-    text-align: center;
-    color: black;
-}
-
 footer p {
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 3rem;
 }
 
 
@@ -394,7 +371,7 @@ footer p {
         color: red;
     }
     .nav h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         padding: 1.5rem;
     }
     .nav ul li {
