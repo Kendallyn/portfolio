@@ -43,7 +43,7 @@ li {
 .nav ul li {
     float: right;
     list-style-type: none;
-    margin: 1.7rem 1rem;
+    margin: 1.9rem 1rem;
 }
 
 .nav a {
@@ -60,15 +60,15 @@ li {
     display: block;
     margin: auto;
     width: 100%;
-    height: 30rem;
+    height: 50rem;
 }
 
 .wrapper .headline {
     font-size: 2.5rem;
     position: absolute;
     top: 150px;
-    right: 50px;
-    color: aqua;
+    padding-left: 1.5rem;
+    color: white;
     text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
@@ -78,6 +78,8 @@ section.projects,
 section.contact {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 section.about h1,
@@ -111,13 +113,6 @@ section.about .aboutText p {
     font-size: 1.5rem;
 }
 
-
-/*
-section.skills {
-    padding-bottom: 1rem;
-}
-*/
-
 section.projects {
     background-color: #fafafa;
 }
@@ -135,6 +130,7 @@ section.projects .apiApp {
     width: 88%;
     background-color: #fafafa;
     margin: 1rem auto;
+    padding-bottom: 4rem;
 }
 
 section.projects .fullstackCap .projectImage,
@@ -175,16 +171,6 @@ section.projects .apiApp .projectDescription {
     display: inline-block;
     vertical-align: top;
 }
-
-
-/*
-section.projects .nodeApp .projectDescription {
-    width: 50%;
-    padding-right: 1rem;
-    display: inline-block;
-    vertical-align: top;
-}
-*/
 
 section.projects .fullstackCap .projectDescription h2,
 section.projects .nodeApp .projectDescription h2,
@@ -277,7 +263,7 @@ section.skills .iconCell i {
 
 section.skills p {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 
@@ -362,6 +348,10 @@ button:hover a {
 footer {
     text-align: center;
     color: black;
+}
+
+footer p {
+    font-size: 20px;
 }
 
 
