@@ -263,6 +263,10 @@ section.skills .iconCell i {
     font-size: 6rem;
 }
 
+section.skills .iconCell .chaiIcon {
+    width: 82px;
+}
+
 section.skills p {
     margin-top: 10px;
     font-size: 28px;
@@ -352,6 +356,9 @@ footer p {
     section.skills .iconCell i {
         font-size: 4rem;
     }
+    section.skills .iconCell .chaiIcon {
+        width: 53px;
+    }
     section.projects .fullstackCap .projectDescription,
     section.projects .apiApp .projectDescription,
     section.projects .nodeApp .projectDescription {
@@ -387,6 +394,9 @@ footer p {
     }
     section.skills .iconCell i {
         font-size: 2rem;
+    }
+    section.skills .iconCell .chaiIcon {
+        width: 27px;
     }
     section.projects .fullstackCap .projectDescription,
     section.project .nodeApp .projectDescription,
