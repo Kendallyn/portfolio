@@ -374,6 +374,9 @@ footer p {
     section.projects .apiApp .projectImage {
         background-size: 100%;
         height: 400px;
+        width: 400px;
+        position: relative;
+        left: 13px;
     }
 }
 
@@ -444,7 +447,10 @@ footer p {
     section.projects .nodeApp .projectImage,
     section.projects .apiApp .projectImage {
         background-size: 100%;
-        height: 250px;
+        height: 350px;
+        width: 350px;
+        position: relative;
+        left: 15px;
     }
 }
 
