@@ -346,9 +346,6 @@ footer p {
 /*ipad landscape / small laptop*/
 
 @media only screen and (max-width: 1024px) {
-    body {
-        color: blue;
-    }
     .wrapper .headline {
         font-size: 3rem;
     }
@@ -384,9 +381,6 @@ footer p {
 /*ipad potrait*/
 
 @media only screen and (max-width: 768px) {
-    body {
-        color: red;
-    }
     .nav h2 {
         font-size: 1.7rem;
         padding: 1.5rem;
@@ -423,9 +417,6 @@ footer p {
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
-    body {
-        color: green;
-    }
     .nav h2 {
         font-size: 1rem;
         padding: 1.9rem;
@@ -451,14 +442,5 @@ footer p {
         width: 350px;
         position: relative;
         left: 15px;
-    }
-}
-
-
-/*iPhone portrait*/
-
-@media only screen and (max-width: 320px) {
-    body {
-        color: purple;
     }
 }
