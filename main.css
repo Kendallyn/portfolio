@@ -368,6 +368,10 @@ footer ul li a {
     color: black;
 }
 
+footer ul li:hover {
+    transform: scale(1.25);
+}
+
 footer p {
     font-size: 25px;
     margin-top: 3rem;
