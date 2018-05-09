@@ -174,17 +174,18 @@ section.projects {
 
 section.projects .fullstackCap,
 section.projects .nodeApp,
-section.projects .apiApp {
+section.projects .apiApp,
+section.projects .quizApp {
     color: black;
     width: 88%;
-    /*    background-color: #fafafa;*/
     margin: 1rem auto;
     padding-bottom: 4rem;
 }
 
 section.projects .fullstackCap .projectImage,
 section.projects .nodeApp .projectImage,
-section.projects .apiApp .projectImage {
+section.projects .apiApp .projectImage,
+section.projects .quizApp .projectImage {
     width: 49%;
     opacity: 0.85;
     background-position: top center;
@@ -196,7 +197,8 @@ section.projects .apiApp .projectImage {
 
 section.projects .fullstackCap .projectImage:hover,
 section.projects .nodeApp .projectImage:hover,
-section.projects .apiApp .projectImage:hover {
+section.projects .apiApp .projectImage:hover,
+section.projects .quizApp .projectImage:hover {
     opacity: 1.0;
 }
 
@@ -212,9 +214,14 @@ section.projects .apiApp .projectImage {
     background-image: url("img/WhichMovieIsNext.png");
 }
 
+section.projects .quizApp .projectImage {
+    background-image: url("img/QuizApp.png");
+}
+
 section.projects .fullstackCap .projectDescription,
 section.projects .nodeApp .projectDescription,
-section.projects .apiApp .projectDescription {
+section.projects .apiApp .projectDescription,
+section.projects .quizApp .projectDescription {
     width: 50%;
     padding-left: 1rem;
     display: inline-block;
@@ -223,7 +230,8 @@ section.projects .apiApp .projectDescription {
 
 section.projects .fullstackCap .projectDescription h2,
 section.projects .nodeApp .projectDescription h2,
-section.projects .apiApp .projectDescription h2 {
+section.projects .apiApp .projectDescription h2,
+section.projects .quizApp .projectDescription h2 {
     font-size: 2.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -232,13 +240,15 @@ section.projects .apiApp .projectDescription h2 {
 
 section.projects .fullstackCap .projectDescription .fa-desktop,
 section.projects .nodeApp .projectDescription .fa-desktop,
-section.projects .apiApp .projectDescription .fa-desktop {
+section.projects .apiApp .projectDescription .fa-desktop,
+section.projects .quizApp .projectDesciption .fa-desktop {
     font-size: 1.6rem;
 }
 
 section.projects .fullstackCap .projectDescription h3,
 section.projects .nodeApp .projectDescription h3,
-section.projects .apiApp .projectDescription h3 {
+section.projects .apiApp .projectDescription h3,
+section.projects .quizApp .projectDescription h3 {
     font-size: 2rem;
     display: inline;
 }
@@ -248,7 +258,8 @@ section.projects .apiApp .projectDescription h3 {
 
 section.projects .fullstackCap .projectDescription .techIcons,
 section.projects .nodeApp .projectDescription .techIcons,
-section.projects .apiApp .projectDescription .techIcons {
+section.projects .apiApp .projectDescription .techIcons,
+section.projects .quizApp .projectDescription .techIcons {
     margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -256,7 +267,8 @@ section.projects .apiApp .projectDescription .techIcons {
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell,
 section.projects .nodeApp .projectDescription .techIcons .iconCell,
-section.projects .apiApp .projectDescription .techIcons .iconCell {
+section.projects .apiApp .projectDescription .techIcons .iconCell,
+section.projects .quizApp .projectDescription .techIcons .iconCell {
     display: inline-block;
     min-width: 10%;
     text-align: center;
@@ -273,19 +285,22 @@ section.projects .apiApp .projectDescription .techIcons .iconCell {
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell:hover,
 section.projects .nodeApp .projectDescription .techIcons .iconCell:hover,
-section.projects .apiApp .projectDescription .techIcons .iconCell:hover {
+section.projects .apiApp .projectDescription .techIcons .iconCell:hover,
+section.projects .quizApp .projectDescription .techIcons .iconCell:hover {
     transform: scale(1.15);
 }
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell i,
 section.projects .nodeApp .projectDescription .techIcons .iconCell i,
-section.projects .apiApp .projectDescription .techIcons .iconCell i {
+section.projects .apiApp .projectDescription .techIcons .iconCell i,
+section.projects .quizApp .projectDescription .techIcons .iconCell i {
     font-size: 50px;
 }
 
 section.projects .fullstackCap .projectDescription .techIcons .iconCell p,
 section.projects .nodeApp .projectDescription .techIcons .iconCell p,
-section.projects .apiApp .projectDescription .techIcons .iconCell p {
+section.projects .apiApp .projectDescription .techIcons .iconCell p,
+section.projects .quizApp .projectDescription .techIcons .iconCell p {
     margin-top: 10px;
 }
 
@@ -335,7 +350,8 @@ section.webdevskills p {
 
 section.projects .fullstackCap .projectDescription .projectText,
 section.projects .nodeApp .projectDescription .projectText,
-section.projects .apiApp .projectDescription .projectText {
+section.projects .apiApp .projectDescription .projectText,
+section.projects .quizApp .projectDescription .projectText {
     font-size: 1.5rem;
 }
 
@@ -426,13 +442,15 @@ footer p {
     }
     section.projects .fullstackCap .projectDescription,
     section.projects .apiApp .projectDescription,
-    section.projects .nodeApp .projectDescription {
+    section.projects .nodeApp .projectDescription,
+    section.projects .quizApp .projectDescription {
         width: 80%;
         vertical-align: top;
     }
     section.projects .fullstackCap .projectImage,
     section.projects .nodeApp .projectImage,
-    section.projects .apiApp .projectImage {
+    section.projects .apiApp .projectImage,
+    section.projects .quizApp .projectImage {
         width: 80%;
         opacity: 0.85;
         background-position: top center;
@@ -471,7 +489,8 @@ footer p {
     }
     section.projects .fullstackCap .projectDescription,
     section.project .nodeApp .projectDescription,
-    section.projects .apiApp .projectDescription {
+    section.projects .apiApp .projectDescription,
+    section.projects .quizApp .projectDescription {
         width: 80%;
         padding-left: 1rem;
         vertical-align: top;
