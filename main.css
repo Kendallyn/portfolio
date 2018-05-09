@@ -97,7 +97,6 @@ body {
 section.about,
 section.skills,
 section.projects {
-    padding-top: 5rem;
     padding-bottom: 4rem;
     max-width: 1500px;
     margin: 0 auto;
@@ -105,9 +104,14 @@ section.projects {
 
 section.about h1,
 section.skills h1,
-section.projects h1 {
+section.webdev h1 {
     padding: 1rem;
     font-size: 2.25rem;
+}
+
+.subtitle {
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
 section.about h3,
@@ -150,8 +154,9 @@ section.skills ul li {
 }
 
 section#webdev {
-/*    padding: 1rem;*/
+    /*    padding: 1rem;*/
     font-size: 1.5rem;
+    margin-left: .75rem;
 }
 
 section.projects {
