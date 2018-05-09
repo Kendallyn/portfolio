@@ -111,7 +111,7 @@ section.webdev h1 {
 
 h1.subtitle {
     margin-left: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding-top: .5rem;
 }
 
@@ -159,13 +159,17 @@ section.skills ul li {
 }
 
 section#webdev {
-    /*    padding: 1rem;*/
     font-size: 1.5rem;
     margin-left: .75rem;
+    margin-top: .5rem;
+    padding-top: 1rem;
 }
 
+section.about,
+section#webdev,
+section.webdevskills,
 section.projects {
-    /*    background-color: #fafafa;*/
+    background-color: #fafafa;
 }
 
 section.projects .fullstackCap,
@@ -289,9 +293,9 @@ section.projects .apiApp .projectDescription .techIcons .iconCell p {
 /*skills icons styles*/
 
 section.webdevskills .techIcons {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 section.webdevskills .iconCell {
