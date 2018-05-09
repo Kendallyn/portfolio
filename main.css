@@ -37,10 +37,6 @@ body {
     font-family: 'Arapey', serif;
 }
 
-li {
-    list-style: none;
-}
-
 .nav {
     overflow: hidden;
     position: fixed;
@@ -126,7 +122,7 @@ section.skills h1 i {
 }
 
 section.about {
-    background-color: #fafafa;
+    /*    background-color: #fafafa;*/
 }
 
 section.about h1 i {
@@ -142,8 +138,24 @@ section.about .aboutText p {
     font-size: 1.5rem;
 }
 
+section.skills ul {
+    display: inline-block;
+}
+
+section.skills ul li {
+    list-style: circle;
+    margin-left: 6.5rem;
+    font-size: 1.5rem;
+    padding: .25rem;
+}
+
+section#webdev {
+/*    padding: 1rem;*/
+    font-size: 1.5rem;
+}
+
 section.projects {
-    background-color: #fafafa;
+    /*    background-color: #fafafa;*/
 }
 
 section.projects .fullstackCap,
@@ -151,7 +163,7 @@ section.projects .nodeApp,
 section.projects .apiApp {
     color: black;
     width: 88%;
-    background-color: #fafafa;
+    /*    background-color: #fafafa;*/
     margin: 1rem auto;
     padding-bottom: 4rem;
 }
