@@ -96,7 +96,8 @@ body {
 
 section.about,
 section.skills,
-section.projects {
+section.webdev,
+section.webdevskills {
     padding-bottom: 4rem;
     max-width: 1500px;
     margin: 0 auto;
