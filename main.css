@@ -109,9 +109,14 @@ section.webdev h1 {
     font-size: 2.25rem;
 }
 
-.subtitle {
-    margin-left: 1rem;
+h1.subtitle {
+    margin-left: 1.5rem;
     font-size: 2rem;
+    padding-top: .5rem;
+}
+
+h1.subtitle i {
+    font-size: 18px;
 }
 
 section.about h3,
@@ -121,7 +126,7 @@ section.project h3 {
 
 section.about h1 i,
 section.projects h1 i,
-section.skills h1 i {
+section.webdev h1 i {
     margin-right: .5rem;
 }
 
@@ -309,7 +314,7 @@ section.webdevskills .iconCell:hover {
 }
 
 section.webdevskills .iconCell i {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 section.webdevskills .iconCell .chaiIcon {
